@@ -20,6 +20,12 @@
     <color name="blue">#00F</color>
 
     <color name="material_empty_color_light">#FFCED7DB</color>
+    <color name="white">#FFF</color>
+    <color name="background_tab_pressed">#1AFFFFFF</color>
+    <color name="material_deep_teal_500">@*android:color/material_deep_teal_500</color>
+    <color name="icon_tint_color">@color/material_deep_teal_500</color>
+    <color name="theme_accent">#ff009688</color>
+    <color name="action_picker_fab_background">@color/theme_accent</color>
 
     <color name="memory_used">#F00</color>
     <color name="memory_avail">@color/material_empty_color_light</color>
