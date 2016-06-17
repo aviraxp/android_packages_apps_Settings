@@ -1273,6 +1273,17 @@ public class SettingsActivity extends Activity
                     if (!deviceHasButtonsSettings()) {
                         removeTile = true;
                     }
+                } else if (id == R.id.substratum) {
+                    boolean supported = false;
+                    try {
+                        supported = (
+                          getPackageManager().getPackageInfo("projekt.substratum", 0).versionCode > 0);
+                    } catch (PackageManager.NameNotFoundException e) {
+                        
+                    }
+                    if (!supported) {
+                        removeTile = true;
+                    }
                 } else if (id == R.id.user_settings) {
                     boolean hasMultipleUsers =
                             ((UserManager) getSystemService(Context.USER_SERVICE))
