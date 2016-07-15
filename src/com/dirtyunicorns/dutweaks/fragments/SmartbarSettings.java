@@ -19,6 +19,7 @@ package com.dirtyunicorns.dutweaks.fragments;
 import java.util.ArrayList;
 
 import android.app.AlertDialog;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.DialogInterface.OnClickListener;
@@ -30,7 +31,6 @@ import android.preference.PreferenceScreen;
 import android.preference.Preference.OnPreferenceChangeListener;
 import android.provider.Settings;
 
-import com.android.internal.logging.MetricsLogger;
 import com.android.internal.utils.du.ActionConstants;
 import com.android.internal.utils.du.Config;
 import com.android.internal.utils.du.Config.ButtonConfig;
@@ -40,11 +40,14 @@ import com.android.settings.SettingsPreferenceFragment;
 public class SmartbarSettings extends SettingsPreferenceFragment implements
         OnPreferenceChangeListener {
     private ListPreference mSmartBarContext;
+    private Context mContext;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.smartbar_settings);
+        
+        mContext = getContext();
 
         int contextVal = Settings.Secure.getIntForUser(mContext.getContentResolver(),
                 "smartbar_context_menu_mode", 0, UserHandle.USER_CURRENT);
@@ -99,6 +102,6 @@ public class SmartbarSettings extends SettingsPreferenceFragment implements
 
     @Override
     protected int getMetricsCategory() {
-        return MetricsLogger.DIRTYTWEAKS;
+        return 0;
     }
 }

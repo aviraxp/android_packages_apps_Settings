@@ -264,4 +264,10 @@
 
     <dimen name="shortcut_size">40dp</dimen>
     <dimen name="badge_size">10dp</dimen>
+    
+    <!-- navbar height -->
+    <integer name="navigation_bar_height_min_percent">65</integer>
+	<integer name="navigation_bar_height_max_percent">120</integer>
+	<integer name="navigation_bar_width_min_percent">65</integer>
+	<integer name="navigation_bar_width_max_percent">120</integer>
 </resources>

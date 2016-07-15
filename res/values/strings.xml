@@ -7097,5 +7097,50 @@
     
     <string name="smartbar_interface">SmartBar</string>
     <string name="icon_pack_picker_dialog_title">Icon packs</string>
+    
+    <!-- Navigation Bar -->
+    <string name="navbar_interface_title">Interface</string>
+    <string name="navbar_size">Bar size</string>
+    <string name="navbar_mode">Navigation mode</string>
+    <string name="navbar_visibility">Enable navigation bar</string>
+    <string name="navigationbar_settings_title">Navigation Bar</string>
+    <string name="navigationbar_settings_summary">Customize navigation style and behavior</string>
+    <string name="navbar_general_title">Advanced</string>
+    <string name="navigation_bar_left_title">Left-handed mode</string>
+    <string name="navigation_bar_left_summary">Place the navigation bar on the left side of the screen in landscape mode</string>
+    <string name="info_pref_note_title">Note</string>
+    <string name="smartbar_interface">SmartBar</string>
+    <string name="icon_pack_picker_dialog_title">Icon packs</string>
+    
+    <!-- Navbar height -->
+    <string name="navigation_bar_size_title">Bar size</string>
+    <string name="portrait_title">Portrait height</string>
+    <string name="land_vert_title">Landscape width</string>
+    <string name="land_hor_title">Landscape height</string>
+    <string name="positive_done">Done</string>
+    
+    <!-- Pulse navigation bar music visualizer -->
+    <string name="pulse_help_policy_notice_title">About Pulse</string>
+    <string name="pulse_help_policy_notice_summary">Pulse is brilliant equalizer bar style audio visualization on the navigation bar when music plays. Pulse does not work with some audio sources when listening on device speaker</string>
+    <string name="pulse_settings">Pulse</string>
+    <string name="pulse_settings_summary">Navigation bar audio visualization</string>
+    <string name="fling_show_pulse_title">Show Pulse</string>
+    <string name="fling_show_pulse_summary">Audio visualization on the navigation bar</string>
+    <string name="fling_pulse_color">Pulse color</string>
+    <string name="eos_fling_lavalamp_title">Turn on Lava Lamp</string>
+    <string name="eos_fling_lavalamp_summary">Pulse animates a smooth lava lamp style color blend</string>
+    
+    <!-- Fling -->
+    <string name="fling_settings">Fling settings</string>
+    <string name="fling_interface">Fling gesture interface</string>
+    
+    <!-- Actions dialog and default task values set in ActionPreference xml-->
+    <string name="choose_action_title">Choose action</string>
+    <string name="action_entry_default_action">Default settings</string>
+    <string name="action_entry_select_app">Select application</string>
+    <string name="action_entry_custom_action">Select custom action</string>
+    <string name="action_value_default_action">action_default</string>
+    <string name="action_value_select_app">action_app</string>
+    <string name="action_value_custom_action">action_custom</string>
 
 </resources>

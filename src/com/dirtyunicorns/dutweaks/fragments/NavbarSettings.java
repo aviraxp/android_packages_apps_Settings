@@ -19,6 +19,7 @@ package com.dirtyunicorns.dutweaks.fragments;
 import java.util.ArrayList;
 
 import android.app.AlertDialog;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.DialogInterface.OnClickListener;
 import android.content.Intent;
@@ -33,7 +34,6 @@ import android.preference.Preference.OnPreferenceChangeListener;
 import android.provider.Settings;
 
 import com.android.settings.SettingsPreferenceFragment;
-import com.android.internal.logging.MetricsLogger;
 import com.android.internal.utils.du.ActionConstants;
 import com.android.internal.utils.du.Config;
 import com.android.internal.utils.du.DUActionUtils;
@@ -57,11 +57,15 @@ public class NavbarSettings extends SettingsPreferenceFragment implements OnPref
     private PreferenceCategory mNavInterface;
     private PreferenceCategory mNavGeneral;
     private PreferenceScreen mSmartbarSettings;
+    
+    private Context mContext;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.navbar_settings);
+        
+        mContext = getContext();
 
         mNavInterface = (PreferenceCategory) findPreference(KEY_CATEGORY_NAVIGATION_INTERFACE);
         mNavGeneral = (PreferenceCategory) findPreference(KEY_CATEGORY_NAVIGATION_GENERAL);
@@ -127,6 +131,6 @@ public class NavbarSettings extends SettingsPreferenceFragment implements OnPref
 
     @Override
     protected int getMetricsCategory() {
-        return MetricsLogger.DIRTYTWEAKS;
+        return 0;
     }
 }
